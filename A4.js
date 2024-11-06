@@ -214,32 +214,19 @@
 
 // Question No. 13 - You are given a string S containing both uppercase and lowercase letters. You need to find out the number of vowels and the number of consonants in the given string. 
 
-// function Count_Vowels(){
-//     let str10 = "PrepBytes";
-//     let vowels = "aeiouAEIOU";
-//     let countV = 0;
-//     for(let i = 0; i < str10.length; i++){
-//         for(let j = 0; j < vowels.length; j++){
-//                 if(str10[i] === vowels[j]){
-//                     countV++;
-//                 }
-//         }
-//     }
-//     console.log(countV);
-// }
-// Count_Vowels();
-// function Count_Consonants(){
-//     let str10 = "PrepBytes";
-//     let countC = 0;
-//     for(let i = 0; i < str10.length; i++){
-//         if((str10[i] !== 'a') || (str10[i] !== 'e') || (str10[i] !== 'i') || (str10[i] !== 'o') || (str10[i] !== 'u')){
-//         countC++;
-//         }else if((str10[i] !== 'A') || (str10[i] !== 'E') || (str10[i] !== 'I') || (str10[i] !== 'O') || (str10[i] !== 'U')){
-//             countC++;
-//         }
-//       }
-//       console.log(countC);
-//     }
+function count_Vowelsfunction(){
+let word = "PrepBytes";
+let CountV = 0;
+let CountC = 0;
+let vowels = "aeiouAEIOU";
 
-
-// Count_Consonants();
+for (let i = 0; i < word.length; i++) {
+  if (vowels.includes(word[i])) {
+   CountV++;
+  } else {
+    CountC++;
+  }
+}
+console.log(CountV, CountC);
+}
+count_Vowelsfunction();
