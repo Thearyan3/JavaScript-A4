@@ -1,30 +1,38 @@
-// Question No. 1 - You are given a string S, and your task is to return an array B(having a size of 2), where B[0] contains the count of character A (uppercase) in string S and B[1] contains the count of character D (uppercase) in string S.
+// Question No. 1 - You are given a string S, and your task is to return an array B(having a size of 2),
+//  where B[0] contains the count of character A (uppercase) in string S and B[1] contains the count of character D (uppercase) in string S.
 
 // function countCharacters(){
 // let S = "AbaDd";
-// let B = [];
+// let countA = 0;
+// let countD = 0;
 // for(let i = 0; i < S.length; i++){
-//    if((S[i] === "A") || (S[i] === "D")){
-//             B += S[i];
+//    if(S[i] === "A"){
+//       countA++;
+//    }else if(S[i] === "D"){
+//     countD++;
 //    }
 // }
-// console.log(B.length);
+// console.log(countA, countD);
 // }
 // countCharacters();
 
 
 // Question No. 2 - Tina is given a string S which contains the first letter of all the student names in her class. She got a curiosity to check how many people have their names starting from the same alphabet. So given a string S, she decided to write a code that finds out the count of characters that occur more than once in the string. 
 
-// let tina = "namesofallthestudentsoftheclass";
-// let count = 0;
-// for(let j = 0; j < tina.length; ++j){
-// for(let k = 0; k < tina.length; ++k){
-// if(tina[j] === tina[k]){
-//    count++;
+// let tina = "1223334444";
+// let count = tina[0];
+// let duplicates = "";
+// for(let j = 0; j < tina.length; j++){
+//      count = tina[0 + j];
+//     // for(let k = 0 + 1; k < tina.length; k++){
+//         if((count === tina[j]) && (!duplicates.search(tina[j]))){
+//         count = tina[j];
+//         duplicates.split().push(tina[j]);
+//         }
+//     // }
 // }
-// }
-// }
-// console.log(count);
+// console.log(duplicates);
+
 
 
 // Question No. 3 - You are given a string S containing both uppercase and lowercase letters. You need to find out the number of vowels in the 
@@ -214,19 +222,19 @@
 
 // Question No. 13 - You are given a string S containing both uppercase and lowercase letters. You need to find out the number of vowels and the number of consonants in the given string. 
 
-function count_Vowelsfunction(){
-let word = "PrepBytes";
-let CountV = 0;
-let CountC = 0;
-let vowels = "aeiouAEIOU";
+// function count_Vowelsfunction(){
+// let word = "PrepBytes";
+// let CountV = 0;
+// let CountC = 0;
+// let vowels = "aeiouAEIOU";
 
-for (let i = 0; i < word.length; i++) {
-  if (vowels.includes(word[i])) {
-   CountV++;
-  } else {
-    CountC++;
-  }
-}
-console.log(CountV, CountC);
-}
-count_Vowelsfunction();
+// for (let i = 0; i < word.length; i++) {
+//   if (vowels.includes(word[i])) {
+//    CountV++;
+//   } else {
+//     CountC++;
+//   }
+// }
+// console.log(CountV, CountC);
+// }
+// count_Vowelsfunction();
